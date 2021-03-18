@@ -17,6 +17,7 @@ import HotelBooking_Midterm_ServiceOrientedArchitecture.response as resp
 from HotelBooking_Midterm_ServiceOrientedArchitecture.config.config import DevelopmentConfig, TestingConfig, ProductionConfig
 
 
+
 app.config['SECRET_KEY']='Thisissupposedtobesecret!!'
 api = Api(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///{}'.format( os.path.join(os.path.dirname(__file__), 'bookingdb.db'))
