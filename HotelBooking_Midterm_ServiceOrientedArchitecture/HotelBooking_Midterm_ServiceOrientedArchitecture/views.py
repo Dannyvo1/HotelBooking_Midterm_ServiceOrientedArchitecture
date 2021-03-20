@@ -71,7 +71,7 @@ def dashboard():
     return render_template('dashboard.html', upcoming=upcoming)
     
     cur.close()
-
+    #fdgdgf
 # STEP 1 - Search for Available Rooms
 @app.route('/search_room', methods=['GET','POST'])
 def search_room():
