@@ -8,29 +8,18 @@
 
 
 <table class="table table-striped">
-    <h3>Available Hotel Locations</i></h3>
+    <h3><i>Available Hotel Locations</i></h3>
     <tr>
         <th>Country</th>
         <th>States</th>
     </tr>
-    {% for key,value in loc.items() %}
-        <tr>
-            <td>{{key}}</td>
-            <td>{{", ".join(value)}}</td>
-        </tr>
-    {% endfor %}
+    
 </table>
 
 {% from 'includes/_formhelpers.html' import render_field %}
 <form method='POST' action="">
     <div class="form-group">
-        {{ render_field(form.country, class_='form-control') }}
-    </div>
-    <div class="form-group">
-        {{ render_field(form.state, class_='form-control') }}
-    </div>
-     <div class="form-group">
-        {{ render_field(form.num_rooms, class_='form-control') }}
+        {{ render_field(form.extra_bed, class_='form-control') }}
     </div>
     <div class="form-group">
         {{ render_field(form.check_in, class_='form-control') }}
